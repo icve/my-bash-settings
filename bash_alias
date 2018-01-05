@@ -1,0 +1,21 @@
+# ssh
+alias Rto='ssh rto'
+alias Rpi='ssh rpi'
+
+# file and dir
+alias ll='ls -l'
+alias lah='ls -lah --sort=size'
+alias df='df -h'
+alias ..='cd ..'
+
+# activate python virtualenv in py dir
+alias actpy='source ./py/bin/activate'
+
+# show listening ports
+alias ports='netstat -tulanp'
+
+# open an item
+alias op='xdg-open'
+
+#open current dir
+alias opd="op . &>/dev/null &"
