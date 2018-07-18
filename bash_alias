@@ -31,3 +31,7 @@ alias dclr='sudo docker rmi $(sudo docker images -f dangling=true -q)'
 # delay exit for closing tmux session
 # (allow user 10s to switch to another session)
 alias dex="sleep 10 && exit"
+
+#ssh ignore host signiture
+alias sshforce="ssh -o StrictHostKeyChecking=no"
+complete -F _ssh sshforce
